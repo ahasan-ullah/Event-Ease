@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <div class="social-bar">
     <ul>
       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -34,12 +33,23 @@
     </div>
     <div class="btn-container">
       <a href="#" class="login-btn">Login</a>
-      <!-- mobile menu -->
-      <div class="mobile-menu">
+      <!-- mobile menu button-->
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
         <i class="fas fa-bars"></i>
+      </div>
+      <!-- mobile menu options -->
+      <div class="mobile-menu-options hidden" id="mobile-menu-options">
+        <ul>
+          <li><a href="index.php" class="active">Home</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
     </div>
   </nav>
   <script src="public/scripts/navbar.js"></script>
 </body>
+
 </html>
