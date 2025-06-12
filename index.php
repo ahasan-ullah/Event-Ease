@@ -1,17 +1,18 @@
-<?php
-include 'views/layouts/navbar.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EventEase – Discover Events</title>
-  <link rel="stylesheet" href="public/styles/banner.css" />
+  <title>EventEase - Discover Events</title>
+  <link rel="stylesheet" href="public/styles/landing.css" />
+  <link rel="stylesheet" href="public/styles/navbar.css" />
+  <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="public/styles/footer.css" />
 </head>
-
 <body>
+  <?php
+  include 'views/layouts/navbar.php';
+  ?>
   <div class="social-bar">
     <ul>
       <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -21,15 +22,13 @@ include 'views/layouts/navbar.php';
       <li class="follow-text">Follow Us</li>
     </ul>
   </div>
-
   <!-- banner Section -->
   <section class="banner">
     <p class="banner-subtitle">ALL THE FUN STARTS HERE</p>
     <h1 class="banner-title">
       Discover <span class="highlight">Events & Tickets</span> around you.
     </h1>
-
-    <!-- Search Box -->
+    <!-- search box -->
     <form class="search-box">
       <div class="search-field">
         <p class="label">WHAT</p>
@@ -41,7 +40,6 @@ include 'views/layouts/navbar.php';
           <option>Festival</option>
         </select>
       </div>
-
       <div class="search-field">
         <p class="label">WHERE</p>
         <select>
@@ -52,17 +50,17 @@ include 'views/layouts/navbar.php';
           <option>Sylhet</option>
         </select>
       </div>
-
       <div class="search-field">
         <p class="label">WHEN</p>
-        <input type="date"/>
+        <input type="date" />
       </div>
       <div class="search-btn-container">
         <button type="submit" class="search-btn">SEARCH</button>
       </div>
     </form>
   </section>
-
+  <?php
+  include 'views/layouts/footer.php';
+  ?>
 </body>
-
 </html>
