@@ -38,6 +38,7 @@
 }
 .footer-bottom{
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 .social-icons a {
