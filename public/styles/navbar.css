@@ -7,32 +7,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
 }
-/* Social Bar */
-.social-bar {
-  position: fixed;
-  top: 40%;
-  left: 20px;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-.social-bar ul {
-  list-style: none;
-  text-align: center;
-}
-.social-bar ul li {
-  margin: 15px 0;
-}
-.social-bar ul li a {
-  color: #000;
-  font-size: 16px;
-  text-decoration: none;
-}
-.social-bar .follow-text {
-  writing-mode:vertical-rl;
-  transform: rotate(180deg);
-  font-size: 12px;
-  margin-top: 10px;
-}
 /* Navbar */
 .navbar {
   width: 100%;
@@ -66,7 +40,7 @@ body {
 }
 .nav-links a.active,
 .nav-links a:hover {
-  color: #d91c5c;
+  color: #FF3C00;
 }
 .nav-links a.active::after {
   content: "";
@@ -75,7 +49,7 @@ body {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background: #d91c5c;
+  background: #FF3C00;
 }
 .login-btn{
   background: #111;
@@ -127,7 +101,7 @@ body {
   font-weight: 500;
 }
 .mobile-menu-options a.active{
-  color: #d91c5c;
+  color: #FF3C00;
 }
 
 /* responsive */
