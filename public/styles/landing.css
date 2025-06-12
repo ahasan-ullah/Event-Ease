@@ -7,12 +7,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
 }
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-}
 /* social Bar */
 .social-bar {
   position: fixed;
@@ -37,6 +31,10 @@ body {
   writing-mode:vertical-rl;
   transform: rotate(180deg);
   font-size: 12px;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
   margin-top: 10px;
 }
 
