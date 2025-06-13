@@ -28,7 +28,7 @@ body {
   text-decoration: none;
 }
 .social-bar .follow-text {
-  writing-mode:vertical-rl;
+  writing-mode: vertical-rl;
   transform: rotate(180deg);
   font-size: 12px;
   background: #000;
@@ -39,23 +39,23 @@ body {
 }
 
 /* banner Section */
-.banner{
+.banner {
   padding: 80px 20px;
   text-align: center;
   border-bottom: 1px solid #eee;
 }
-.banner-subtitle{
+.banner-subtitle {
   color: #555;
   font-weight: 500;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
-.banner-title{
+.banner-title {
   font-size: 48px;
   margin: 0 0 30px;
 }
 .highlight {
-  color: #FF3C00;
+  color: #ff3c00;
 }
 /* search box */
 .search-box {
@@ -87,44 +87,43 @@ body {
   font-size: 16px;
   outline: none;
 }
-.search-btn-container{
+.search-btn-container {
   display: flex;
   align-items: flex-end;
 }
 .search-btn {
-  background-color: #FF3C00;
+  background-color: #ff3c00;
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 14px;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 .search-btn:hover {
   background-color: #e63300;
 }
 /* events */
-.upcoming-events{
+.upcoming-events {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 10px;
   border-bottom: 1px solid #eee;
 }
-.events-header{
+.events-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
-.events-header h2{
+.events-header h2 {
   font-size: 28px;
   font-weight: 600;
   color: #111;
 }
-.view-all-btn{
-  background-color: #FF3C00;
+.view-all-btn {
+  background-color: #ff3c00;
   color: #fff;
   padding: 8px 16px;
   border: none;
@@ -134,15 +133,15 @@ body {
   transition: background-color 0.3s;
   text-decoration: none;
 }
-.view-all-btn:hover{
+.view-all-btn:hover {
   background-color: #e63300;
 }
-.events-grid{
+.events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
-.event-card{
+.event-card {
   position: relative;
   border-radius: 20px;
   cursor: pointer;
@@ -171,11 +170,11 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
-.event-info h3{
+.event-info h3 {
   font-size: 18px;
   margin: 5px 0;
 }
-.event-info p{
+.event-info p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -186,8 +185,58 @@ body {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 768px){
-  .banner{
+/* deal section */
+.deal-section {
+  background-image: url("../../assets/bg-deal");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 1200px;
+  border-bottom: 1px solid #eee;
+}
+.deal-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.deal-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.deal-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.deal-btn {
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.deal-btn i {
+  margin-left: 8px;
+}
+.deal-btn:hover {
+  background-color: #c40812;
+}
+.deal-discount h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
     padding: 50px 10px;
   }
   .search-box {
@@ -195,19 +244,27 @@ body {
     align-items: center;
     padding: 20px;
   }
-  .search-field{
+  .search-field {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
   }
-  .search-btn,.search-btn-container{
+  .search-btn,
+  .search-btn-container {
     width: 100%;
   }
-  .social-bar{
+  .social-bar {
     display: none;
   }
-  .events-header h2{
+  .events-header h2 {
     font-size: 24px;
+  }
+  .deal-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .deal-discount h1 {
+    font-size: 4rem;
   }
 }

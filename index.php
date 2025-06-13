@@ -141,6 +141,23 @@
       </div>
     </div>
   </section>
+
+  <!-- deal section -->
+  <section class="deal-section">
+    <div class="deal-container">
+      <div class="deal-text">
+        <h2>Deal of the Day!</h2>
+        <p>Register today and get <strong>40% OFF</strong> from your first purchase.</p>
+        <a href="#" class="deal-btn">
+          Grab The Deal Now <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="deal-discount">
+        <h1>40%</h1>
+      </div>
+    </div>
+  </section>
+
   <?php
   include 'views/layouts/footer.php';
   ?>
