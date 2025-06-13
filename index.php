@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +10,7 @@
   <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="public/styles/footer.css" />
 </head>
+
 <body>
   <?php
   include 'views/layouts/navbar.php';
@@ -58,6 +60,98 @@
         <button type="submit" class="search-btn">SEARCH</button>
       </div>
     </form>
+  </section>
+
+  <!-- upcoming section -->
+  <section class="upcoming-events">
+    <div class="events-header">
+      <div>
+        <p>DISCOVER THE FUN</p>
+        <h2>Upcoming Events</h2>
+      </div>
+      <a href="#" class="view-all-btn">View All</a>
+    </div>
+
+    <div class="events-grid">
+      <!-- event card -->
+      <div class="event-card">
+        <img src="assets/event-1.jpg" alt="IT Conference">
+        <div class="event-info">
+          <p class="price"><del>$49</del> - $300</p>
+          <h3>IT Conference</h3>
+          <p><i class="fas fa-calendar"></i> Apr 17 &nbsp; <i class="fas fa-map-marker-alt"></i> San Jose Civic</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event-2.jpg" alt="Vibra Mahou Fest">
+        <div class="event-info">
+          <p class="price">$39 - $1,200</p>
+          <h3>Vibra Mahou Fest</h3>
+          <p><i class="fas fa-calendar"></i> Jul 16 &nbsp; <i class="fas fa-map-marker-alt"></i> Grant Park, Chicago</p>
+        </div>
+      </div>
+
+      <!-- Repeat similar blocks for the rest -->
+      <!-- Kenny G -->
+      <div class="event-card">
+        <img src="assets/event-3.jpg" alt="Kenny G">
+        <div class="event-info">
+          <p class="price">$200</p>
+          <h3>Kenny G</h3>
+          <p><i class="fas fa-calendar"></i> Aug 28 &nbsp; <i class="fas fa-map-marker-alt"></i> Majestic Theatre</p>
+        </div>
+      </div>
+
+      <!-- Sesame Street -->
+      <div class="event-card">
+        <img src="assets/event-4.jpg" alt="Sesame Street Live">
+        <div class="event-info">
+          <p class="price">$45</p>
+          <h3>Sesame Street Live! Make Your Magic</h3>
+          <p><i class="fas fa-calendar"></i> Sep 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
+        </div>
+      </div>
+
+      <!-- Nutcracker -->
+      <div class="event-card">
+        <img src="assets/event-5.jpg" alt="Nutcracker Ballet">
+        <div class="event-info">
+          <p class="price">$60 - $75</p>
+          <h3>St. Petersburg Ballet - The Nutcracker</h3>
+          <p><i class="fas fa-calendar"></i> Oct 19 &nbsp; <i class="fas fa-map-marker-alt"></i> Majestic Theatre</p>
+        </div>
+      </div>
+
+      <!-- Opera -->
+      <div class="event-card">
+        <img src="assets/event-6.jpg" alt="The Phantom of the Opera">
+        <div class="event-info">
+          <p class="price">$35 - $99</p>
+          <h3>The Phantom of the Opera</h3>
+          <p><i class="fas fa-calendar"></i> Nov 28 &nbsp; <i class="fas fa-map-marker-alt"></i> Kings Theatre</p>
+        </div>
+      </div>
+
+      <!-- Cirque -->
+      <div class="event-card">
+        <img src="assets/event-7.jpg" alt="Cirque du Soleil Kurios">
+        <div class="event-info">
+          <p class="price">$49</p>
+          <h3>Cirque du Soleil Kurios</h3>
+          <p><i class="fas fa-calendar"></i> Dec 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
+        </div>
+      </div>
+      <!-- demo -->
+      <div class="event-card">
+        <img src="assets/event-8.jpg" alt="Cirque du Soleil Kurios">
+        <div class="event-info">
+          <p class="price">$49</p>
+          <h3>Cirque du Soleil Kurios</h3>
+          <p><i class="fas fa-calendar"></i> Dec 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
+        </div>
+      </div>
+    </div>
   </section>
   <?php
   include 'views/layouts/footer.php';
