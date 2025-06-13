@@ -158,8 +158,58 @@
     </div>
   </section>
 
+  <!-- testomonial -->
+  <section class="testimonials-section">
+    <div class="testimonial-header">
+      <p class="subheading">Testimonials</p>
+      <h2>Hear From Our Organizers</h2>
+    </div>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <h4>Awesome Support!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum venenatis neque eget tristique!</p>
+        <div class="testimonial-user">
+          <img src="assets/review-1.jpg" alt="Alex McQueen" />
+          <div>
+            <div class="stars">★★★★★</div>
+            <strong>Alex MCQUEEN</strong>
+            <p>02/15/2020</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <h4>Great Features</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum venenatis neque eget tristique!</p>
+        <div class="testimonial-user">
+          <img src="assets/review-2.jpg" alt="Brittney Barton" />
+          <div>
+            <div class="stars">★★★★★</div>
+            <strong>Brittney BARTON</strong>
+            <p>02/15/2020</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <h4>Awesome Support!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum venenatis neque eget tristique!</p>
+        <div class="testimonial-user">
+          <img src="assets/review-1.jpg" alt="Alex McQueen" />
+          <div>
+            <div class="stars">★★★★★</div>
+            <strong>Alex MCQUEEN</strong>
+            <p>02/15/2020</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <?php
   include 'views/layouts/footer.php';
   ?>
 </body>
+
 </html>

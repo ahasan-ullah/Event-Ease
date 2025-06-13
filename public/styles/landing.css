@@ -41,6 +41,8 @@ body {
 /* banner Section */
 .banner {
   padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
   border-bottom: 1px solid #eee;
 }
@@ -234,6 +236,81 @@ body {
   font-weight: bold;
   color: white;
 }
+/* testimoila */
+.testimonials-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+}
+.testimonial-header .subheading {
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.testimonial-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.testimonial-cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+.testimonial-card{
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 370px;
+  text-align: left;
+}
+.testimonial-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars {
+  color: #fbbf24; /* gold */
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.testimonial-user strong {
+  display: block;
+  font-size: 14px;
+}
+
+.testimonial-user p {
+  font-size: 12px;
+  color: #888;
+}
 
 @media screen and (max-width: 768px) {
   .banner {
@@ -266,5 +343,13 @@ body {
   }
   .deal-discount h1 {
     font-size: 4rem;
+  }
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-btn {
+    display: none;
   }
 }
