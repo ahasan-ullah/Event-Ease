@@ -91,9 +91,6 @@
           <p><i class="fas fa-calendar"></i> Jul 16 &nbsp; <i class="fas fa-map-marker-alt"></i> Grant Park, Chicago</p>
         </div>
       </div>
-
-      <!-- Repeat similar blocks for the rest -->
-      <!-- Kenny G -->
       <div class="event-card">
         <img src="assets/event-3.jpg" alt="Kenny G">
         <div class="event-info">
@@ -102,8 +99,6 @@
           <p><i class="fas fa-calendar"></i> Aug 28 &nbsp; <i class="fas fa-map-marker-alt"></i> Majestic Theatre</p>
         </div>
       </div>
-
-      <!-- Sesame Street -->
       <div class="event-card">
         <img src="assets/event-4.jpg" alt="Sesame Street Live">
         <div class="event-info">
@@ -112,8 +107,6 @@
           <p><i class="fas fa-calendar"></i> Sep 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
         </div>
       </div>
-
-      <!-- Nutcracker -->
       <div class="event-card">
         <img src="assets/event-5.jpg" alt="Nutcracker Ballet">
         <div class="event-info">
@@ -122,8 +115,6 @@
           <p><i class="fas fa-calendar"></i> Oct 19 &nbsp; <i class="fas fa-map-marker-alt"></i> Majestic Theatre</p>
         </div>
       </div>
-
-      <!-- Opera -->
       <div class="event-card">
         <img src="assets/event-6.jpg" alt="The Phantom of the Opera">
         <div class="event-info">
@@ -132,8 +123,6 @@
           <p><i class="fas fa-calendar"></i> Nov 28 &nbsp; <i class="fas fa-map-marker-alt"></i> Kings Theatre</p>
         </div>
       </div>
-
-      <!-- Cirque -->
       <div class="event-card">
         <img src="assets/event-7.jpg" alt="Cirque du Soleil Kurios">
         <div class="event-info">
@@ -142,7 +131,6 @@
           <p><i class="fas fa-calendar"></i> Dec 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
         </div>
       </div>
-      <!-- demo -->
       <div class="event-card">
         <img src="assets/event-8.jpg" alt="Cirque du Soleil Kurios">
         <div class="event-info">
