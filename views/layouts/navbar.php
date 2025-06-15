@@ -2,7 +2,7 @@
   <div class="logo">Event<br>Ease</div>
   <div class="nav-links">
     <ul>
-      <li><a href="index.php" class="active">Home</a></li>
+      <li><a href="../../../event-ease/index.php" class="active">Home</a></li>
       <li><a href="#">Events</a></li>
       <li><a href="#">Features</a></li>
       <li><a href="#">Policies</a></li>
@@ -18,7 +18,7 @@
     <!-- mobile menu options -->
     <div class="mobile-menu-options hidden" id="mobile-menu-options">
       <ul>
-        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="../../../event-ease/index.php" class="active">Home</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Policies</a></li>
