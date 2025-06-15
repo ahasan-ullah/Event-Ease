@@ -3,6 +3,7 @@ session_start();
 include '../config/db.php';
 
 $_SESSION['emailErr'] = $_SESSION['passErr'] = '';
+$_SESSION['login_failed'] = '';
 $_SESSION['user'] = [];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
@@ -41,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
       header("Location: ../../../../event-ease/index.php");
       exit;
     } else {
-      $_SESSION['emailErr'] = "Invalid email or password.";
+      $_SESSION['login_failed'] = "Invalid email or password.";
     }
   }
   $conn->close();

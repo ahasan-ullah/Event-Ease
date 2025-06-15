@@ -1,8 +1,3 @@
-<?php
-if(session_start()===PHP_SESSION_NONE){
-  session_start();
-}
-?>
 <nav class="navbar">
   <div class="logo">Event<br>Ease</div>
   <div class="nav-links">

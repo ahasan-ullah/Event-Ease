@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +9,6 @@
   <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="public/styles/footer.css" />
 </head>
-
 <body>
   <?php
   include 'views/layouts/navbar.php';
@@ -206,11 +204,9 @@
     </div>
   </section>
 
-
   <?php
   include 'views/layouts/footer.php';
   ?>
   <script src="public/scripts/navbar.js"></script>
 </body>
-
 </html>
