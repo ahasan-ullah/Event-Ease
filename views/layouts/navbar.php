@@ -27,4 +27,3 @@
     </div>
   </div>
 </nav>
-<script src="public/scripts/navbar.js"></script>

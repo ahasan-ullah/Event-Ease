@@ -210,6 +210,7 @@
   <?php
   include 'views/layouts/footer.php';
   ?>
+  <script src="public/scripts/navbar.js"></script>
 </body>
 
 </html>
