@@ -10,7 +10,7 @@
     </ul>
   </div>
   <div class="btn-container">
-    <a href="#" class="login-btn" id="login-btn">Login</a>
+    <a href="../../../event-ease/views/login_page.php" class="login-btn" id="login-btn">Login</a>
     <!-- mobile menu button-->
     <div class="mobile-menu-btn" id="mobile-menu-btn">
       <i class="fas fa-bars"></i>

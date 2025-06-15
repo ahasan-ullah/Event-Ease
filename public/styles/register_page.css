@@ -13,6 +13,7 @@ body {
   padding: 30px;
   background-color: #eee;
   border-radius: 8px;
+  margin-bottom: 1px solid #ccc;
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
 }
 .register-container h2{
