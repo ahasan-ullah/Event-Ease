@@ -2,12 +2,13 @@
 if(session_status()===PHP_SESSION_NONE){
   session_start();
 }
+$currentPath=$_SERVER['REQUEST_URI'];
 ?>
 <nav class="navbar">
   <div class="logo">Event<br>Ease</div>
   <div class="nav-links">
     <ul>
-      <li><a href="../../../event-ease/index.php" class="active">Home</a></li>
+      <li><a href="../../../event-ease/index.php" class="<?php echo strpos($currentPath, '/event-ease/index.php') !== false ? 'active' : ''; ?>">Home</a></li>
       <li><a href="#">Events</a></li>
       <li><a href="#">Features</a></li>
       <li><a href="#">Policies</a></li>
