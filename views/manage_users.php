@@ -2,6 +2,7 @@
 include '../controllers/admin_controller.php';
 $users=allUsers();
 // echo var_dump($users);
+$msg=$_GET['message']??'';
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,13 @@ $users=allUsers();
   ?>
   <main class="user-table">
     <h1>Manage Users</h1>
+    <?php
+    if($msg){
+      echo "<p class='msg'>'$msg'</p>";
+    }
+    $msg='';
+    echo "<script>history.replaceState(null, '', location.pathname);</script>";
+    ?>
     <div class="table-container">
       <table>
         <thead>
@@ -37,7 +45,7 @@ $users=allUsers();
               echo "<td>" . $user["name"] . "</td>";
               echo "<td>" . $user["email"] . "</td>";
               echo "<td>" . $user["user_type"] . "</td>";
-              echo "<td><a class='delete-btn' href='delete_user.php?id=" . $user["id"] . "'>Delete</a></td>";
+              echo "<td><a class='delete-btn' href='../controllers/admin_controller.php?delete=true&id=" . $user["id"] . "'>Delete</a></td>";
               echo "</tr>";
             }
           } else {
