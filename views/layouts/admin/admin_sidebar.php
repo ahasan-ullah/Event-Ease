@@ -24,7 +24,7 @@ $currentPath=$_SERVER['REQUEST_URI'];
         <li><i class="fas fa-calendar-alt"></i><a href="#">Manage Events</a></li>
         <li><i class="fas fa-users"></i><a href="#">Add Event</a></li>
         <li><i class="fas fa-home"></i><a href="../index.php">Home</a></li>
-        <li><i class="fas fa-cogs"></i><a href="#">Logout</a></li>
+        <li><i class="fas fa-cogs"></i><a href="../controllers/logout_controller.php">Logout</a></li>
       </ul>
     </div>
   </div>
