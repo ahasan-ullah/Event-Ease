@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../config/db.php';
+include __DIR__ . '../config/db.php';
 
 $_SESSION['nameErr'] = $_SESSION['emailErr'] = $_SESSION['passErr'] = $_SESSION['success'] = "";
 

@@ -20,7 +20,7 @@ unset($_SESSION['nameErr'], $_SESSION['emailErr'], $_SESSION['passErr'], $_SESSI
 </head>
 <body>
   <?php 
-    include 'layouts/navbar.php'; 
+    include __DIR__  . '/layouts/navbar.php'; 
   ?>
   <div class="register-container">
     <h2>Create Account</h2>
@@ -45,7 +45,7 @@ unset($_SESSION['nameErr'], $_SESSION['emailErr'], $_SESSION['passErr'], $_SESSI
       <p>Already have an account? <a href="../../event-ease/views/login_page.php">Login</a></p>
     </form>
   </div>
-  <?php include '../views/layouts/footer.php'; ?>
+  <?php include __DIR__ . '/layouts/footer.php'; ?>
   <script src="../public/scripts/navbar.js"></script>
 </body>
 </html>

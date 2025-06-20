@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
 </head>
 <body>
   <?php
-  include 'layouts/navbar.php';
+  include __DIR__ . '/layouts/navbar.php';
   ?>
   <div class="register-container">
     <h2>Create Account</h2>
@@ -25,18 +28,16 @@
       <div class="form-group">
         <label>Email</label>
         <input type="email" name="email" placeholder="Email" required />
-        <?php if (!empty($emailErr)) echo "<small style='color:red;'>$emailErr</small>"; ?>
       </div>
       <div class="form-group">
         <label>Password</label>
         <input type="password" name="password" placeholder="Password" required />
-        <?php if (!empty($passErr)) echo "<small style='color:red;'>$passErr</small>"; ?>
       </div>
       <button type="submit" name="login">Login</button>
       <p>Don't have any account? <a href="../../event-ease/views/register_page.php">Register</a></p>
     </form>
   </div>
-  <?php include '../views/layouts/footer.php'; ?>
+  <?php include __DIR__ . '/layouts/footer.php'; ?>
   <script src="../public/scripts/navbar.js"></script>
 </body>
 </html>

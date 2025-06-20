@@ -16,7 +16,7 @@ if(session_status()===PHP_SESSION_NONE){
 </head>
 <body>
   <?php 
-  include '../views/layouts/navbar.php';
+  include __DIR__ . '/layouts/navbar.php';
   ?>
   <section class="profile-section">
     <div class="profile-container">
@@ -30,7 +30,7 @@ if(session_status()===PHP_SESSION_NONE){
       ?>
     </div>
   </section>
-  <?php include '../views/layouts/footer.php'; ?>
+  <?php include __DIR__ . '/layouts/footer.php'; ?>
   <script src="../public/scripts/navbar.js"></script>
 </body>
 </html>

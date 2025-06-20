@@ -11,7 +11,7 @@
 </head>
 <body>
   <?php
-  include 'views/layouts/navbar.php';
+  include __DIR__ . '/views/layouts/navbar.php';
   ?>
   <div class="social-bar">
     <ul>
@@ -205,7 +205,7 @@
   </section>
 
   <?php
-  include 'views/layouts/footer.php';
+  include __DIR__ . '/views/layouts/footer.php';
   ?>
   <script src="public/scripts/navbar.js"></script>
 </body>
