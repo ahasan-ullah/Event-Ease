@@ -17,23 +17,18 @@ table {
   margin-top: 30px;
   overflow-x: auto;
 }
-th, td {
+th,td{
   text-align: left;
-  padding: 10px;
+  padding: 12px;
   border-bottom: 1px solid #ccc;
 }
 th {
   background-color: #ccc;
 }
-tr:hover {
-  background-color: #ccc;
-}
 .delete-btn {
-  color: red;
+  background-color: red;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  border: 1px solid red;
-  padding: 6px 10px;
+  padding: 8px;
   border-radius: 5px;
-  transition: 0.2s ease;
 }
