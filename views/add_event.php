@@ -1,5 +1,6 @@
 <?php
 include '../config/db.php';
+$msg=$_GET['msg']??'';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +17,19 @@ include '../config/db.php';
   ?>
   <main class="add_event_form">
     <h2>Add New Event</h2>
-    <form action="store_event.php" method="POST" enctype="multipart/form-data">
+    <?php
+    if($msg){
+      echo "<p class='msg'>'$msg'</p>";
+    }
+    $msg='';
+    echo "<script>history.replaceState(null, '', location.pathname);</script>";
+    ?>
+    <form action="../controllers/add_event_controller.php" method="POST" enctype="multipart/form-data">
       <label>Title</label>
       <input type="text" name="title" required />
 
       <label>Price (BDT)</label>
-      <input type="number" name="price" step="50" required />
+      <input type="number" name="price" step="1" required />
 
       <label>Location</label>
       <input type="text" name="location" required />
@@ -47,7 +55,7 @@ include '../config/db.php';
       <label>Description</label>
       <textarea name="description" rows="4" required></textarea>
 
-      <button type="submit">Add</button>
+      <button type="submit" name="add-event">Add</button>
     </form>
   </main>
 </body>

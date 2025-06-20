@@ -47,6 +47,15 @@ form button:hover {
   border: 1px solid black;
   color: black;
 }
+.msg{
+  background-color: rgb(137, 235, 137);
+  color: green;
+  padding: 5px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 6px;
+}
 @media (max-width: 768px) {
   .add_event_form{
     margin: 10px;
