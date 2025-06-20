@@ -4,8 +4,7 @@ $_SESSION['success'] = "";
 $_SESSION['login_failed'] = '';
 $_SESSION['user'] = [];
 
-function Login($email,$password)
-{
+function Login($email, $password){
   global $conn;
   $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
   $result = $conn->query($sql);
@@ -35,8 +34,7 @@ function Login($email,$password)
   exit;
 }
 
-function Register($name, $email, $password)
-{
+function Register($name, $email, $password){
   global $conn;
   $check = "SELECT * FROM users WHERE email = '$email'";
   $result = $conn->query($check);
@@ -53,5 +51,13 @@ function Register($name, $email, $password)
   }
   $conn->close();
   header("Location: ../views/register_page.php");
+  exit;
+}
+
+function Logout(){
+  session_start();
+  session_unset();
+  session_destroy();
+  header(("Location: ../views/login_page.php"));
   exit;
 }
