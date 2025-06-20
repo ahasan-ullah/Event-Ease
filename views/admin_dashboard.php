@@ -13,6 +13,26 @@
   <?php
   include __DIR__ . "/layouts/admin/admin_sidebar.php";
   ?>
+  <main class="dashboard-main">
+    <h1>Admin Dashboard</h1>
+    <div class="dashboard-cards">
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <p>Total Users</p>
+        <h2>7</h2>
+      </div>
+      <div class="card">
+        <i class="fas fa-calendar-alt"></i>
+        <p>Total Events</p>
+        <h2>12</h2>
+      </div>
+      <div class="card">
+        <i class="fas fa-ticket-alt"></i>
+        <p>Total Bookings</p>
+        <h2>20</h2>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>

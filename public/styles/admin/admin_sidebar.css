@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  display: flex;
-}
-.sidebar-container {
-  display: flex;
-  width: 100%;
-}
 .sidebar {
   width: 300px;
   background-color: black;
