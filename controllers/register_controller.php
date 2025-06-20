@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../models/register_model.php';
+include '../models/auth_model.php';
 
 $_SESSION['nameErr'] = $_SESSION['emailErr'] = $_SESSION['passErr'] = "";
 

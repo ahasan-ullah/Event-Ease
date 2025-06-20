@@ -25,7 +25,7 @@ unset($_SESSION['nameErr'], $_SESSION['emailErr'], $_SESSION['passErr'], $_SESSI
   <div class="register-container">
     <h2>Create Account</h2>
     <?php if (!empty($success)) echo "<div class='success-message'>$success</div>"; ?>
-    <form action="../controllers/register.php" method="POST">
+    <form action="../controllers/register_controller.php" method="POST">
       <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" placeholder="Full Name" required />

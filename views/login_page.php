@@ -24,7 +24,7 @@ session_start();
       $_SESSION['login_failed'] = '';
     }
     ?>
-    <form action="../controllers/login.php" method="POST">
+    <form action="../controllers/login_controller.php" method="POST">
       <div class="form-group">
         <label>Email</label>
         <input type="email" name="email" placeholder="Email" required />
