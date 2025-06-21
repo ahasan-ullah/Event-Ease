@@ -36,3 +36,14 @@ function addEvent($title,$price,$location,$date,$time,$category,$organizer,$avai
   $sql = "insert into events (title, price, location, date, time, category, organizer, image, description, available_seats) values ('$title', '$price', '$location', '$date', '$time', '$category', '$organizer', '$uploadPath', '$description', '$available_seats')";
   return $conn->query($sql);
 }
+function getAllEvents(){
+  global $conn;
+  $sql="select * from events";
+  $result=$conn->query($sql);
+  $events=[];
+  while($row=$result->fetch_assoc()){
+    $events[]=$row;
+  }
+  return $events;
+}
+?>

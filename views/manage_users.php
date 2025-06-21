@@ -45,7 +45,7 @@ $msg=$_GET['message']??'';
               echo "<td>" . $user["name"] . "</td>";
               echo "<td>" . $user["email"] . "</td>";
               echo "<td>" . $user["user_type"] . "</td>";
-              echo "<td><a class='delete-btn' href='../controllers/admin_controller.php?delete=true&id=" . $user["id"] . "'>Delete</a></td>";
+              echo "<td><a class='delete-btn' href='../controllers/admin_controller.php?user_delete=true&id=" . $user["id"] . "'>Delete</a></td>";
               echo "</tr>";
             }
           } else {
