@@ -46,4 +46,10 @@ function getAllEvents(){
   }
   return $events;
 }
+function deleteEvent($id){
+  global $conn;
+  $sql = "delete from events where id='$id'";
+  $result = $conn->query($sql);
+  return $result;
+}
 ?>

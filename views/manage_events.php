@@ -19,6 +19,9 @@ $msg=$_GET['message']??'';
     table th,td{
       padding: 10px;
     }
+    .msg{
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
