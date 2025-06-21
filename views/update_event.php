@@ -34,7 +34,7 @@ $event=getEvent($id);
     }
     $msg='';
     ?>
-    <form action="../controllers/update_event_controller.php" method="POST" enctype="multipart/form-data">
+    <form <?php echo 'action="../controllers/update_event_controller.php?id=' . $id . '"';?> method="POST" enctype="multipart/form-data">
       <label>Title</label>
       <input type="text" name="title" required value="<?=$event['title']?>"/>
 
@@ -60,13 +60,13 @@ $event=getEvent($id);
       <input type="number" name="available_seats" min="1" required value="<?=$event['available_seats']?>"/>
 
       <label>Image</label>
-      <input type="file" name="image" accept="image/*" required value="<?=$event['image']?>"/>
+      <input type="file" name="image" accept="image/*"/>
       <img class="show-img" src="<?=$event['image']?>" width="100">
 
       <label>Description</label>
       <textarea name="description" rows="4" required> <?php echo $event['description']?></textarea>
 
-      <button type="submit" name="update-event">Update</button>
+      <button type="submit" name="event_update">Update</button>
     </form>
   </main>
 </body>

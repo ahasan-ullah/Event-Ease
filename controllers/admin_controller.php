@@ -15,7 +15,7 @@ function allEvents(){
 if(isset($_GET['event_delete'])){
   $id=$_GET['id'];
   $result=deleteEvent($id);
-  $msg=true?"Event deleted successfully":"Failed to delete event";
+  $msg=$result?"Event deleted successfully":"Failed to delete event";
   header("Location: ../views/manage_events.php?message='$msg'");
 }
 ?>
