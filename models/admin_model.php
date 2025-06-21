@@ -1,8 +1,7 @@
 <?php
 require '../config/db.php';
 
-function getAllUsers()
-{
+function getAllUsers(){
   global $conn;
   $sql = "select id, name, email, user_type from users where user_type != 'admin'";
 
@@ -51,5 +50,12 @@ function deleteEvent($id){
   $sql = "delete from events where id='$id'";
   $result = $conn->query($sql);
   return $result;
+}
+function getEventById($id){
+  global $conn;
+  $sql="select * from events where id='$id'";
+  $result=$conn->query($sql);
+  $event=$result->fetch_assoc();
+  return $event;
 }
 ?>

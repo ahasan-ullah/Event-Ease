@@ -75,7 +75,7 @@ $msg=$_GET['message']??'';
               echo "<td>
               <div class='btn-container'>
               <a class='delete-btn' href='../controllers/admin_controller.php?event_delete=true&id=" . $event["id"] . "'>Delete</a>
-              <a class='update-btn' href='../controllers/admin_controller.php?event_update=true&id=" . $event["id"] . "'>Update</a>
+              <a class='update-btn' href='../views/update_event.php?id=" . $event["id"] . "'>Update</a>
               </div>
               </td>";
               echo "</tr>";
