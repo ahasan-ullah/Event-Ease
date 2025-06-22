@@ -89,4 +89,15 @@ function updateEvent($id,$title,$price,$location,$date,$time,$category,$organize
   $result=$conn->query($sql);
   return $result;
 }
+
+function getAttendeeList(){
+  global $conn;
+  $sql="select a.id,u.name,u.email,e.title,e.location,e.date,a.booking_time,a.number_of_tickets from attendee_list a join users u on a.user_id = u.id join events e on a.event_id = e.id order by a.booking_time desc";
+  $result=$conn->query($sql);
+  $attendeeList=[];
+  while($row=$result->fetch_assoc()){
+    $attendeeList[]=$row;
+  }
+  return $attendeeList;
+}
 ?>

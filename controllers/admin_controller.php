@@ -18,4 +18,7 @@ if(isset($_GET['event_delete'])){
   $msg=$result?"Event deleted successfully":"Failed to delete event";
   header("Location: ../views/manage_events.php?message='$msg'");
 }
+function attendeeList(){
+  return getAttendeeList();
+}
 ?>
