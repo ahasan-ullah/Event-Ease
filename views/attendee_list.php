@@ -17,6 +17,22 @@ $attendees=attendeeList();
     table th,td{
       padding: 10px;
     }
+    .header-content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .download-btn{
+      background: #111;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -24,7 +40,14 @@ $attendees=attendeeList();
   include __DIR__ . "/layouts/admin_sidebar.php";
   ?>
   <main class="user-table">
-    <h1>Attendee List</h1>
+    <div class="header-content">
+      <h1>Attendee List</h1>
+      <?php
+      if($attendees){
+        echo "<a href='' class='download-btn' id='attendee-list-download'>Download List</a>";
+      }
+      ?>
+    </div>
     <div class="table-container">
       <table>
         <thead>
