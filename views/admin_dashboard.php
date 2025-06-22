@@ -3,6 +3,7 @@ require '../controllers/admin_controller.php';
 $usersNumber=totalUsers();
 // var_dump($usersNumber);
 $eventsNumber=totalEvents();
+$bookingsNumber=totalBookings();
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +35,7 @@ $eventsNumber=totalEvents();
       <div class="card">
         <i class="fas fa-ticket-alt"></i>
         <p>Total Bookings</p>
-        <h2>20</h2>
+        <h2><?php echo $bookingsNumber?></h2>
       </div>
     </div>
   </main>

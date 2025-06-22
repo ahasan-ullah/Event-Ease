@@ -34,4 +34,8 @@ function totalUsers(){
 function totalEvents(){
   return getTotalEvents();
 }
+
+function totalBookings(){
+  return getTotalBookings();
+}
 ?>

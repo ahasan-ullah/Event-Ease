@@ -132,4 +132,13 @@ function getTotalEvents(){
   }
   return $eventsNumber;
 }
+
+function getTotalBookings(){
+  $bookings=getAttendeeList();
+  $bookingsNumber=0;
+  foreach($bookings as $booking){
+    $bookingsNumber++;
+  }
+  return $bookingsNumber;
+}
 ?>
