@@ -18,7 +18,12 @@ $currentPath=$_SERVER['REQUEST_URI'];
   <div class="btn-container">
     <?php
     if(isset($_SESSION['user']) && !empty($_SESSION['user'])) {
-      echo '<button class="profile-btn"  id="profile-btn"><a href="../../../event-ease/views/profile_page.php"><i class="fa fa-user"></i></a></button>';
+      if($_SESSION['user']['user_type']==='admin'){
+        echo '<a href="../../../event-ease/views/admin_dashboard.php" class="login-btn">Admin</a>';
+      }
+      else{
+        echo '<button class="profile-btn"  id="profile-btn"><a href="../../../event-ease/views/profile_page.php"><i class="fa fa-user"></i></a></button>';
+      }
       echo '<a href="../../../event-ease/controllers/logout_controller.php" class="login-btn">Logout</a>';
     } else {
       echo '<a href="../../../event-ease/views/login_page.php" class="login-btn" id="login-btn">Login</a>';
