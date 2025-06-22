@@ -30,4 +30,8 @@ function attendeeList(){
 function totalUsers(){
   return getTotalUsers();
 }
+
+function totalEvents(){
+  return getTotalEvents();
+}
 ?>

@@ -123,4 +123,13 @@ function getTotalUsers(){
   }
   return $usersNumber;
 }
+
+function getTotalEvents(){
+  $events=getAllEvents();
+  $eventsNumber=0;
+  foreach($events as $event){
+    $eventsNumber++;
+  }
+  return $eventsNumber;
+}
 ?>
