@@ -44,7 +44,7 @@ $attendees=attendeeList();
       <h1>Attendee List</h1>
       <?php
       if($attendees){
-        echo "<a href='' class='download-btn' id='attendee-list-download'>Download List</a>";
+        echo "<a href='../controllers/download_csv_controller.php' class='download-btn' id='attendee-list-download'>Download List</a>";
       }
       ?>
     </div>

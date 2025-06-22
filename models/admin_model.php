@@ -100,4 +100,18 @@ function getAttendeeList(){
   }
   return $attendeeList;
 }
+function downloadAttendeeList(){
+  $attendeeList=getAttendeeList();
+
+  $fp=fopen('php://output','w');
+  $header_line=array("ID","Attendee Name","Email","Event","Location","Event Date","Booked On","Tickets");
+  fputcsv($fp,$header_line);
+  foreach($attendeeList as $row){
+    $line=array($row['id'],$row['name'],$row['email'],$row['title'],$row['location'],$row['date'],$row['booking_time'],$row['number_of_tickets']);
+    fputcsv($fp,$line);
+  }
+  fclose($fp);
+  header('Content-type:application/csv');
+  header('Content-disposition:attachment;filename="attendee_list.csv"');
+}
 ?>
