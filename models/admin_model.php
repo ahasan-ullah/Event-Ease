@@ -114,4 +114,13 @@ function downloadAttendeeList(){
   header('Content-type:application/csv');
   header('Content-disposition:attachment;filename="attendee_list.csv"');
 }
+
+function getTotalUsers(){
+  $users=getAllUsers();
+  $usersNumber=0;
+  foreach($users as $user){
+    $usersNumber++;
+  }
+  return $usersNumber;
+}
 ?>

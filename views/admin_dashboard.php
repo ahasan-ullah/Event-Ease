@@ -1,3 +1,9 @@
+<?php
+require '../controllers/admin_controller.php';
+$usersNumber=totalUsers();
+// var_dump($usersNumber);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +23,7 @@
       <div class="card">
         <i class="fas fa-users"></i>
         <p>Total Users</p>
-        <h2>7</h2>
+        <h2><?php echo $usersNumber?></h2>
       </div>
       <div class="card">
         <i class="fas fa-calendar-alt"></i>
