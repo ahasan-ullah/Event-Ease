@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/controllers/user_controller.php';
 $upcomingEvents=upcomingEvents();
-var_dump($upcomingEvents);
+// var_dump($upcomingEvents);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +83,7 @@ var_dump($upcomingEvents);
         <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
         <div class="event-info">
           <p class="price">'.$event['price'].'</p>
-          <h3>IT Conference</h3>
+          <h3>'.$event['title'].'</h3>
           <p><i class="fas fa-calendar"></i>'.$event['date'].'&nbsp; <i class="fas fa-map-marker-alt"></i> '.$event['location'].'</p>
         </div>
       </div>';
