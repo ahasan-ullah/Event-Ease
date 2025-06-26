@@ -1,6 +1,6 @@
 <?php
 include '../controllers/user_controller.php';
-$upcomingEvents=upcomingEvents();
+$allEvents=allEvents();
 // var_dump($upcomingEvents);
 ?>
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ $upcomingEvents=upcomingEvents();
     <div class="events-grid">
       <!-- event card -->
       <?php
-      foreach($upcomingEvents as $event){
+      foreach($allEvents as $event){
         echo '<div class="event-card">
         <a href="#">
           <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
