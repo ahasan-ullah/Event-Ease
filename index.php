@@ -1,3 +1,8 @@
+<?php
+include __DIR__ . '/controllers/user_controller.php';
+$upcomingEvents=upcomingEvents();
+var_dump($upcomingEvents);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
