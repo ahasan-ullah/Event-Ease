@@ -72,20 +72,22 @@ $upcomingEvents=upcomingEvents();
         <p>DISCOVER THE FUN</p>
         <h2>Upcoming Events</h2>
       </div>
-      <a href="#" class="view-all-btn">View All</a>
+      <a href="views/events_page.php" class="view-all-btn">View All</a>
     </div>
 
     <div class="events-grid">
       <!-- event card -->
       <?php
       foreach($upcomingEvents as $event){
-        echo '<div class="event-card">;
-        <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
-        <div class="event-info">
+        echo '<div class="event-card">
+        <a href="#">
+          <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
+          <div class="event-info">
           <p class="price">'.$event['price'].'</p>
           <h3>'.$event['title'].'</h3>
           <p><i class="fas fa-calendar"></i>'.$event['date'].'&nbsp; <i class="fas fa-map-marker-alt"></i> '.$event['location'].'</p>
         </div>
+        </a>
       </div>';
       }
       ?>

@@ -9,7 +9,7 @@ $currentPath=$_SERVER['REQUEST_URI'];
   <div class="nav-links">
     <ul>
       <li><a href="../../../event-ease/index.php" class="<?php echo strpos($currentPath, '/event-ease/index.php') !== false ? 'active' : ''; ?>">Home</a></li>
-      <li><a href="#">Events</a></li>
+      <li><a href="../../../event-ease/views/events_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/events_page.php') !== false ? 'active' : ''; ?>">Events</a></li>
       <li><a href="#">Features</a></li>
       <li><a href="#">Policies</a></li>
       <li><a href="#">Contact Us</a></li>
@@ -36,8 +36,8 @@ $currentPath=$_SERVER['REQUEST_URI'];
     <!-- mobile menu options -->
     <div class="mobile-menu-options hidden" id="mobile-menu-options">
       <ul>
-        <li><a href="../../../event-ease/index.php" class="active">Home</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="../../../event-ease/index.php" class="<?php echo strpos($currentPath, '/event-ease/index.php') !== false ? 'active' : ''; ?>">Home</a></li>
+        <li><a href="../../../event-ease/views/events_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/events_page.php') !== false ? 'active' : ''; ?>">Events</a></li>
         <li><a href="#">Features</a></li>
         <li><a href="#">Policies</a></li>
         <li><a href="#">Contact Us</a></li>
