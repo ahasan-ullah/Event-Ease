@@ -77,16 +77,20 @@ var_dump($upcomingEvents);
 
     <div class="events-grid">
       <!-- event card -->
-      <div class="event-card">
-        <img src="assets/event-1.jpg" alt="IT Conference">
+      <?php
+      foreach($upcomingEvents as $event){
+        echo '<div class="event-card">;
+        <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
         <div class="event-info">
-          <p class="price"><del>$49</del> - $300</p>
+          <p class="price">'.$event['price'].'</p>
           <h3>IT Conference</h3>
-          <p><i class="fas fa-calendar"></i> Apr 17 &nbsp; <i class="fas fa-map-marker-alt"></i> San Jose Civic</p>
+          <p><i class="fas fa-calendar"></i>'.$event['date'].'&nbsp; <i class="fas fa-map-marker-alt"></i> '.$event['location'].'</p>
         </div>
-      </div>
+      </div>';
+      }
+      ?>
 
-      <div class="event-card">
+      <!-- <div class="event-card">
         <img src="assets/event-2.jpg" alt="Vibra Mahou Fest">
         <div class="event-info">
           <p class="price">$39 - $1,200</p>
@@ -141,7 +145,7 @@ var_dump($upcomingEvents);
           <h3>Cirque du Soleil Kurios</h3>
           <p><i class="fas fa-calendar"></i> Dec 26 &nbsp; <i class="fas fa-map-marker-alt"></i> Grand Chapiteau</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
