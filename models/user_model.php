@@ -10,4 +10,14 @@ function getUpcomingEvents(){
   }
   return $upcomingEvents;
 }
+function getFilteredEvents($category,$location,$date){
+  global $conn;
+  $sql="select * from events where category='$category' and location='$location' and date='$date'";
+  $result=$conn->query($sql);
+  $filteredEvents = [];
+  while ($row=$result->fetch_assoc()){
+    $filteredEvents[]=$row;
+  }
+  return $filteredEvents;
+}
 ?>

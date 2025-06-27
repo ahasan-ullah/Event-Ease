@@ -10,4 +10,7 @@ function allEvents(){
 function eventById($id){
   return getEventById($id);
 }
+function filterEvents($category,$location,$date){
+  return getFilteredEvents($category,$location,$date);
+}
 ?>
