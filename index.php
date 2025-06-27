@@ -80,7 +80,7 @@ $upcomingEvents=upcomingEvents();
       <?php
       foreach($upcomingEvents as $event){
         echo '<div class="event-card">
-        <a href="#">
+        <a href="/event-ease/views/event_details_page.php?id='.$event['id'].'">
           <img src="/event-ease/uploads/'.$event['image'].'" alt='.$event['title'].'>
           <div class="event-info">
           <p class="price">'.$event['price'].'</p>

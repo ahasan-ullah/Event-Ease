@@ -7,4 +7,7 @@ function upcomingEvents(){
 function allEvents(){
   return getAllEvents();
 }
+function eventById($id){
+  return getEventById($id);
+}
 ?>
