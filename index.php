@@ -34,30 +34,30 @@ $upcomingEvents=upcomingEvents();
       Discover <span class="highlight">Events & Tickets</span> around you.
     </h1>
     <!-- search box -->
-    <form class="search-box">
+    <form class="search-box" action="./views/events_page.php" method="GET">
       <div class="search-field">
         <p class="label">WHAT</p>
-        <select>
-          <option>Select Category</option>
-          <option>Concert</option>
-          <option>Conference</option>
-          <option>Sports</option>
-          <option>Festival</option>
+        <select name="category">
+          <option value="">Select Category</option>
+          <option value="Concert">Concert</option>
+          <option value="Conference">Conference</option>
+          <option value="Sports">Sports</option>
+          <option value="Festival">Festival</option>
         </select>
       </div>
       <div class="search-field">
         <p class="label">WHERE</p>
-        <select>
-          <option>Select Location</option>
-          <option>Dhaka</option>
-          <option>Chittagong</option>
-          <option>Khulna</option>
-          <option>Sylhet</option>
+        <select name="location">
+          <option value="">Select Location</option>
+          <option value="Dhaka">Dhaka</option>
+          <option value="Chittagong">Chittagong</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Sylhet">Sylhet</option>
         </select>
       </div>
       <div class="search-field">
         <p class="label">WHEN</p>
-        <input type="date" />
+        <input type="date" name="date" />
       </div>
       <div class="search-btn-container">
         <button type="submit" class="search-btn">SEARCH</button>
