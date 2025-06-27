@@ -8,11 +8,15 @@ $imagePath = str_replace('../', '/event-ease/', $event['image']);
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><?= htmlspecialchars($event['title']) ?> | Event Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><?php echo $event['title'] ?> | Event Details</title>
+  <link rel="stylesheet" href="../public/styles/navbar.css">
   <link rel="stylesheet" href="../public/styles/event_details.css">
+  <link rel="stylesheet" href="../public/styles/footer.css">
   <script src="https://kit.fontawesome.com/8f7b27f9d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <?php include '../views/layouts/navbar.php' ?>
   <div class="event-details-container">
     <div class="event-content">
       <div class="event-image">
@@ -34,6 +38,6 @@ $imagePath = str_replace('../', '/event-ease/', $event['image']);
       </div>
     </div>
   </div>
+  <?php include '../views/layouts/footer.php'?>
 </body>
-
 </html>
