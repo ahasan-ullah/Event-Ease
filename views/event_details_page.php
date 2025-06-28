@@ -33,7 +33,7 @@ $event = eventById($eventId);
           <h3>Description</h3>
           <p><?php echo $event['description']; ?></p>
         </div>
-        <a href="book_event.php?id=<?php echo $event['id']; ?>" class="book-btn">Book Now</a>
+        <a href="./checkout_page.php?id=<?php echo $event['id']; ?>" class="book-btn">Book Now</a>
       </div>
     </div>
   </div>
