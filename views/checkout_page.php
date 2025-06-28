@@ -19,6 +19,9 @@ $totalPrice=$event['price'];
 </head>
 
 <body>
+  <div class="back-btn-container">
+    <a href='./event_details_page.php?id=<?php echo $eventId?>' class="back-btn">Back</a>
+  </div>
   <section>
     <h2>Checkout</h2>
     <div class="checkout-container">
