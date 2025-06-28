@@ -20,4 +20,8 @@ function getFilteredEvents($category,$location,$date){
   }
   return $filteredEvents;
 }
+
+function makePayment(){
+  
+}
 ?>
