@@ -21,7 +21,10 @@ function getFilteredEvents($category,$location,$date){
   return $filteredEvents;
 }
 
-function makePayment(){
-  
+function makePayment($eventId,$userId,$num_of_seats,$price,$cardNumber, $cardHolderName){
+  global $conn;
+  $sql="insert into attendee_list (event_id,user_id, number_of_tickets,price,card_number,card_holder_name) values ('$eventId','$userId','$num_of_seats','$price','$cardNumber','$cardHolderName')";
+  $result=$conn->query($sql);
+  return $result;
 }
 ?>

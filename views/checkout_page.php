@@ -59,7 +59,8 @@ $event=eventById($eventId);
         <form action="../controllers/checkout_controller.php" method="POST">
           <input type="hidden" name="event_id" value="<?php echo $event['id']?>">
           <input type="hidden" name="user_id" value="<?php echo $user['id']?>">
-          <input type="hidden" name="price" id="total" value="<?php echo $event['price']?>">
+          <input type="hidden" name="price" value="<?php echo $event['price']?>">
+          <input type="hidden" name="ticket_nums" value="1" id="ticket_nums">
 
           <label>Card Number</label>
           <input type="text" name="card_number" required placeholder="1234 5678 9012 3456">
@@ -83,6 +84,7 @@ $event=eventById($eventId);
       }
       function calculateTotal(){
         const seats=parseInt(document.getElementById("seats").value);
+        document.getElementById("ticket_nums").value=seats;
         const price=<?php echo $event['price'] ?>;
         document.getElementById("total").innerText = (seats*price).toFixed(2);
         document.querySelector('input[name="price"]').value=(seats*price).toFixed(2);
