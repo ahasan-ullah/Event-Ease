@@ -25,21 +25,24 @@ unset($_SESSION['nameErr'], $_SESSION['emailErr'], $_SESSION['passErr'], $_SESSI
   <div class="register-container">
     <h2>Create Account</h2>
     <?php if (!empty($success)) echo "<div class='success-message'>$success</div>"; ?>
-    <form action="../controllers/register_controller.php" method="POST">
+    <form onsubmit="return validateRegisterForm()" action="../controllers/register_controller.php" method="POST">
       <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" placeholder="Full Name" required />
-        <?php if (!empty($nameErr)) echo "<small style='color:red;'>$nameErr</small>"; ?>
+        <?php if (!empty($nameErr)) echo "<small style='color:red;'>$nameErr</small>";?>
+        <span class="error" id="nameError"></span>
       </div>
       <div class="form-group">
         <label>Email</label>
         <input type="email" name="email" placeholder="Email" required />
-        <?php if (!empty($emailErr)) echo "<small style='color:red;'>$emailErr</small>"; ?>
+        <?php if (!empty($emailErr)) echo "<small style='color:red;'>$emailErr</small>";?>
+        <span class="error" id="emailError"></span>
       </div>
       <div class="form-group">
         <label>Password</label>
         <input type="password" name="password" placeholder="Password" required />
-        <?php if (!empty($passErr)) echo "<small style='color:red;'>$passErr</small>"; ?>
+        <?php if (!empty($passErr)) echo "<small style='color:red;'>$passErr</small>";?>
+        <span class="error" id="passwordError"></span>
       </div>
       <button type="submit" name="register">Register</button>
       <p>Already have an account? <a href="../../event-ease/views/login_page.php">Login</a></p>
@@ -47,5 +50,6 @@ unset($_SESSION['nameErr'], $_SESSION['emailErr'], $_SESSION['passErr'], $_SESSI
   </div>
   <?php include __DIR__ . '/layouts/footer.php'; ?>
   <script src="../public/scripts/navbar.js"></script>
+  <!-- <script src="../public/scripts/js-validation.js"></script> -->
 </body>
 </html>

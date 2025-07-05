@@ -10,9 +10,14 @@ $currentPath=$_SERVER['REQUEST_URI'];
     <ul>
       <li><a href="../../../event-ease/index.php" class="<?php echo strpos($currentPath, '/event-ease/index.php') !== false ? 'active' : ''; ?>">Home</a></li>
       <li><a href="../../../event-ease/views/events_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/events_page.php') !== false ? 'active' : ''; ?>">Events</a></li>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Policies</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <?php
+        if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
+          echo '<li><a href="../../../event-ease/views/my_events_page.php" class="'.(strpos($currentPath, '/event-ease/views/my_events_page.php') !== false ?'active' : '') .'">My Bookings</a></li>';
+        }
+      ?>
+      <li><a href="../../../event-ease/views/features_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/features_page.php') !== false ? 'active' : ''; ?>">Features</a></li>
+      <li><a href="../../../event-ease/views/policies_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/policies_page.php') !== false ? 'active' : ''; ?>">Policies</a></li>
+      <li><a href="../../../event-ease/views/contact_us_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/contact_us_page.php') !== false ? 'active' : ''; ?>">Contact Us</a></li>
     </ul>
   </div>
   <div class="btn-container">
@@ -38,9 +43,9 @@ $currentPath=$_SERVER['REQUEST_URI'];
       <ul>
         <li><a href="../../../event-ease/index.php" class="<?php echo strpos($currentPath, '/event-ease/index.php') !== false ? 'active' : ''; ?>">Home</a></li>
         <li><a href="../../../event-ease/views/events_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/events_page.php') !== false ? 'active' : ''; ?>">Events</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Policies</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="../../../event-ease/views/features_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/features_page.php') !== false ? 'active' : ''; ?>">Features</a></li>
+        <li><a href="../../../event-ease/views/policies_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/policies_page.php') !== false ? 'active' : ''; ?>">Policies</a></li>
+        <li><a href="../../../event-ease/views/contact_us_page.php" class="<?php echo strpos($currentPath, '/event-ease/views/contact_us_page.php') !== false ? 'active' : ''; ?>">Contact Us</a></li>
       </ul>
     </div>
   </div>

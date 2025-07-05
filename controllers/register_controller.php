@@ -33,7 +33,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['register'])){
     $_SESSION['passErr'] = "Password must be at least 6 characters.";
     $valid = false;
   }
-  if ($valid) {
+  if($valid) {
     Register($name,$email,$password);
+  }
+  else{
+    header('Location: ../views/register_page.php');
   }
 }

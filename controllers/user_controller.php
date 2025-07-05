@@ -13,4 +13,7 @@ function eventById($id){
 function filterEvents($category,$location,$date){
   return getFilteredEvents($category,$location,$date);
 }
+function myEvents($id){
+  return getMyEvents($id);
+}
 ?>

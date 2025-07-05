@@ -38,4 +38,7 @@ function totalEvents(){
 function totalBookings(){
   return getTotalBookings();
 }
+function contactMessages(){
+  return getContactMessages();
+}
 ?>

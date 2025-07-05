@@ -27,4 +27,20 @@ function makePayment($eventId,$userId,$num_of_seats,$price,$cardNumber, $cardHol
   $result=$conn->query($sql);
   return $result;
 }
+function submitQuery($name,$email,$subject,$message){
+  global $conn;
+  $sql="insert into contact_messages(name,email, subject,message) values ('$name', '$email', '$subject', '$message')";
+  $result=$conn->query($sql);
+  return $result;
+}
+function getMyEvents($id){
+  global $conn;
+  $sql="select a.id, e.title, e.location, e.date, e.time, a.number_of_tickets, a.booking_time from attendee_list a join events e on a.event_id=e.id where a.user_id = $id order by a.booking_time desc";
+  $result=$conn->query($sql);
+  $myEvents=[];
+  while($row=$result->fetch_assoc()){
+    $myEvents[]=$row;
+  }
+  return json_encode($myEvents);
+}
 ?>
